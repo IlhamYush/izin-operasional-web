@@ -12,12 +12,12 @@ class Histori extends Model
     protected $table = 'histori';
 
     protected $fillable = [
-        // Daftar kolom yang dapat diisi 
         'id_kantor', 'nama_kantor', 'jenis_kantor', 
         'pso_non_pso', 'kcu_kc', 'nomor_nde', 'tanggal_nde', 
         'pejabat_pengirim_nde', 'regional', 'jenis_pengajuan', 
         'biaya_yang_diajukan', 'masa_sewa', 'tmt', 'sd', 
-        'kinerja_2021', 'kinerja_2022', 'kinerja_2023', 'tanggal_submit_surat', 
-        'perihal', 'keterangan', 'status', 'tanggal_edit'
+        'kinerja_2021', 'kinerja_2022', 'kinerja_2023', 
+        'tanggal_submit_surat', 'perihal', 'keterangan', 
+        'status', 'tanggal_edit', 'action_type', 'AlasanPenghapusan' // Kolom baru
     ];
 }

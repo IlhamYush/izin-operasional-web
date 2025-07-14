@@ -34,10 +34,12 @@ class DataController extends Controller
             return redirect()->route('entry')->with('error', 'Data tidak ditemukan');
         }
 
-        Histori::where('id_kantor', $data->id_kantor)->delete();
+        // Menyimpan histori sebelum data diperbarui
+        $historiData = $data->toArray();
+        // $historiData['action_type'] = 'update'; // Menambahkan tipe aksi sebagai 'update'
+        Histori::create($historiData);
 
-        Histori::create($data->toArray());
-
+        // Memperbarui data
         $data->perihal = $request->perihal;
         $data->keterangan = $request->keterangan;
         $data->status = $request->status;
@@ -54,7 +56,7 @@ class DataController extends Controller
         if ($data) {
             return response()->json([
                 'perihal' => $data->perihal, 
-                'nomor_nde' => $data->nomor_nde,
+                'nomor_nde' => $data->nomor_nde,-
                 'tanggal_submit_surat' => $data->tanggal_submit_surat,
                 'keterangan' => $data->keterangan
             ]);

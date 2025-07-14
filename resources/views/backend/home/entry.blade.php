@@ -80,11 +80,11 @@
                         <input type="date" class="form-control" id="tmt" name="tmt" required>
                     </div>
                     
-                    <div class="mb-3">
+                    <div class="mb-3 mt-3">
                         <label for="sd" class="form-label">SD</label>
                         <input type="date" class="form-control" id="sd" name="sd" required>
                         <div class="mb-3">
-                        <label for="kinerja_2021" class="form-label">Kinerja 2021</label>
+                        <label for="kinerja_2021" class="form-label mt-3">Kinerja 2021</label>
                         <div class="row">
                             <div class="col">
                                 <input type="text" class="form-control" id="kinerja_2021_kurlog" name="kinerja_2021_kurlog" placeholder="Kurlog" required>

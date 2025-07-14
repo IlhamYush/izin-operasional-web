@@ -1,24 +1,37 @@
-![Home-—-Laravel-Sneat](https://github.com/muhalvin/laravel-sneat/assets/97495721/e80e741b-6f75-4bbe-aee1-cd8da104cfdb)
-![Users-—-Laravel-Sneat](https://github.com/muhalvin/laravel-sneat/assets/97495721/49044e12-294e-4403-b1c9-fd35f5ed2f69)
+# Sistem Peminjaman Izin Operasional – PT Pos Indonesia
 
-<h1 align="center">Laravel + Sneat</h1>
+Website berbasis PHP untuk membantu proses peminjaman izin operasional di PT Pos Indonesia.
 
-<p>
-Laravel 10 Boilerplate with Sneat Admin Dashboard and some packages such as auth, permission and users management.
-</p>
+## 📌 CATATAN
 
-## Main Template
+Gunakan file `referensi.sql` yang tersedia di folder ini untuk mengimpor data ke dalam database **(setelah melakukan langkah migrasi database di Installation)**.  
+Pastikan struktur kolom pada tabel `referensi` sesuai dengan berikut:
 
-If you want to check the original template in HTML5 and Bootstrap, [click here](https://github.com/themeselection/sneat-bootstrap-html-laravel-admin-template-free.git) to open template repository.
+1. `id_kantor`
+2. `Nama_kantor`
+3. `jenis_kantor`
+4. `pso_non_pso`
+5. `NomorRegional`
+6. `Regional`
+7. `NomorKCU`
+8. `KCU`
+9. `KC`
+10. `Provinsi`
+11. `Kota`
+12. `KodeKecamatan`
+13. `Kecamatan`
+14. `Kelurahan`
+15. `Alamat`
 
-## Installation
+## ✅ Requirements
+- PHP version 8
+- MySQL
 
-1. Clone this project
-    ```bash
-    git clone https://github.com/muhalvin/laravel-sneat.git
+## ⚙️ Setup & Installation
+1. Clone repository:
+   ```bash
+   git clone https://github.com/IlhamYush/izin-operasional-web.git
 
-    cd laravel-sneat
-    ```
 2. Install dependencies
 
     ```bash
@@ -71,7 +84,3 @@ If you want to check the original template in HTML5 and Bootstrap, [click here](
 - Socialite
 - Php-Flasher
 - Yajra Datatables
-
-## Contributing
-
-Feel free to contribute and make a pull request.

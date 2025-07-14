@@ -33,6 +33,7 @@ Route::group(['middleware' => ['auth']], function () {
 
     // Monitoring Export Route
     Route::get('/monitoring/export', [MonitoringController::class, 'export'])->name('monitoring.export');
+    Route::delete('/monitoring/delete', [MonitoringController::class, 'delete'])->name('monitoring.delete');
 
     // Other Routes
     Route::post('/home/submit', [DataController::class, 'submit'])->name('submit');
